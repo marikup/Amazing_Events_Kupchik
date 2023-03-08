@@ -1,15 +1,15 @@
-const divElements = document.getElementById('card1')
+const containerCard = document.getElementById('card1')
 let card = '';
 
-for (let event of events){
-    if(event.date <= "2022-01-01"){
-    card += ` <div class="card text-white bg-dark" style="width: 15rem;margin:.5rem;" >
-        <img src="${event.image}" class="card-img-top" alt="...">
+for (evento of data.events){
+    if(evento.date <= data.currentDate){
+    card += ` <div class="card text-white bg-dark" style="width: 18rem;margin:.5rem;" >
+        <img src="${evento.image}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">${event.name}</h5>
-            <p class="card-text">${event.description}</p>
-            <p class="card-text">${event.date}</p>
-            <p class="card-text">Price:${event.price}</p>
+            <h5 class="card-title">${evento.name}</h5>
+            <p class="card-text">${evento.description}</p>
+            <p class="card-text">${evento.date}</p>
+            <p class="card-text">Price:${evento.price}</p>
             <div class="contenedor">
             <a href="#" class="btn-card btn btn-danger border border-light">Detail </a>
           </div>
@@ -17,5 +17,5 @@ for (let event of events){
 </div> `
 }
 }
-divElements.innerHTML = card
+containerCard.innerHTML = card
 console.log(card)

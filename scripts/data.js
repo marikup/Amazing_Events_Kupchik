@@ -1,5 +1,6 @@
-const events = [
-
+var data = {
+  "currentDate": "2022-01-01",
+  "events": [
     {
       _id: 1,
       "image":"https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg",
@@ -169,4 +170,4 @@ const events = [
       "price":250
     }
   ]
-;
+};

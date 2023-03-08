@@ -1,0 +1,149 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Handlee', cursive;
+}
+
+body {
+    font-size: 15px;
+    background: #ED4264;
+    background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
+   background: linear-gradient(to right, #FFEDBC, #ED4264);
+    }
+ /*//CARDS//*/ 
+.card {
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+    box-shadow: 4px 4px 4px 4px rgb(105, 7, 87);
+  
+    
+}
+.card h5{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+   
+}
+.contenedor-btn{
+    
+    justify-content: space-around;
+
+    align-items:center;
+   
+}
+
+.card-body{
+    text-align: center;
+    padding: 20px 15px;
+  
+}
+
+.card:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.card-text {
+    text-align: center;
+    
+}
+
+#card1{
+    justify-content: center;
+
+}
+.card-img-top{
+    border-radius: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: .7rem;
+    width: 100%;
+   
+  /*  width: 100%;
+    display: block;
+    height: 10rem;
+    */
+}
+
+
+
+
+   @media(max-width: 576px) {
+    .card-text {
+        font-size: 0.8rem;
+}
+
+}
+
+
+
+
+
+/*pagination*/
+.page-link {
+
+    font-size:2rem;
+}
+
+.page-conten {
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+    background: linear-gradient(to right, #2a0845, #6441A5);
+   
+}
+
+/*//NAVBAR//*/
+
+.navbar{
+    display: flex;
+    align-content: flex-end;
+    
+}
+
+.navbar-expand-lg {
+    display: flex!important;
+    
+    
+    flex-wrap: wrap;
+}
+
+#navbarNavAltMarkup{
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+ 
+}
+/*details*/
+.img-detail {
+    width: 100%;
+}
+
+.col-detail {
+    border: solid 3px rgb(0, 0, 0);
+  
+}
+
+.text-detail {
+    border: solid 3px rgb(0, 0, 0);
+    text-align: start;
+    background-color: lightsalmon;
+}
+
+.btn:hover {
+    color: #080707;
+    background-color: #864891;
+    border-color: #470752;
+}
+
+.btn-card{
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+
+}

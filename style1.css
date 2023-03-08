@@ -7,10 +7,12 @@
 }
 
 body {
-    font-size: 15px;
+    
+    font-size: 18px;
     background: #ED4264;
     background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
    background: linear-gradient(to right, #FFEDBC, #ED4264);
+  
     }
  /*//CARDS//*/ 
 .card {
@@ -142,7 +144,15 @@ align-items: flex-end;
     text-align: start;
     background-color: lightsalmon;
 }
-
+.container-detail{
+align-items: center;
+}
+.card-detail{
+    display: inline-grid;
+    justify-content: space-around;
+    align-items: stretch;
+   
+}
 .btn:hover {
     color: #080707;
     background-color: #864891;

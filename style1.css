@@ -28,16 +28,19 @@ body {
 }
 .container-card{
     display: flex;
-    
+   
 justify-content: space-around;
 align-items: flex-end;
 
+
 }
 .card h5{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-   
+   color: #d7a3e0;
+  
 }
+
 .contenedor-btn{
     
     justify-content: space-around;
@@ -74,6 +77,7 @@ align-items: flex-end;
     flex-direction: column;
     padding: .7rem;
     width: 100%;
+    
    
   /*  width: 100%;
     display: block;
@@ -164,4 +168,7 @@ display: flex;
 justify-content: space-around;
 align-items: flex-end;
 
+}
+.card-text-price{
+   text-align: start;;
 }

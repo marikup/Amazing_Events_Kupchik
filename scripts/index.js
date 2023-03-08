@@ -9,7 +9,7 @@ for (evento of data.events){
             <h5 class="card-title">${evento.name}</h5>
             <p class="card-text">${evento.description}</p>
             <p class="card-text">${evento.date}</p>
-            <p class="card-text">Price:${evento.price}</p>
+            <p class="card-text-price"><i class="bi bi-tag-fill"></i> Price:${evento.price}</p>
             <div class="contenedor-btn">
             <a href="#" class="btn-card btn btn-danger border border-light">Detail </a>
           </div>

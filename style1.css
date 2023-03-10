@@ -23,14 +23,14 @@ body {
     flex-direction: row;
     
     box-shadow: 4px 4px 4px 4px rgb(105, 7, 87);
-  
+
     
 }
 .container-card{
     display: flex;
    
 justify-content: space-around;
-align-items: flex-end;
+/*align-items: flex-end;*/
 
 
 }
@@ -43,16 +43,18 @@ align-items: flex-end;
 
 .contenedor-btn{
     
+    display: flex;
     justify-content: space-around;
-
-    align-items:center;
-   
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card-body{
     text-align: center;
     padding: 20px 15px;
-  
+  align-self: flex-start;
 }
 
 .card:hover {
@@ -62,29 +64,33 @@ align-items: flex-end;
 
 .card-text {
     text-align: center;
-    
+   
 }
 
 #card1{
     justify-content: center;
-
+    
 }
 .card-img-top{
     border-radius: 2rem;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     padding: .7rem;
-    width: 100%;
+    /*width: 100%;*/
+    width: 17rem;
+    height: 11rem;
     
-   
   /*  width: 100%;
-    display: block;
+   display: block;
     height: 10rem;
     */
 }
 
+.card-img{
+    align-self: baseline;
+    
+}
 
 
 
@@ -171,4 +177,7 @@ align-items: flex-end;
 }
 .card-text-price{
    text-align: start;;
+}
+.card h4{
+    color: #470752;
 }

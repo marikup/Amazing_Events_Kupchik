@@ -1,6 +1,3 @@
-
-
-
 const containerCard = document.getElementById('card1')
 let card = '';
 

@@ -8,7 +8,7 @@
 
 body {
     
-    font-size: 18px;
+    /*font-size: 18px;*/
     background: #ED4264;
     background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
    background: linear-gradient(to right, #FFEDBC, #ED4264);
@@ -180,4 +180,8 @@ align-items: flex-end;
 }
 .card h4{
     color: #470752;
+}
+.row{
+    margin-right: 0;
+    margin-left:0;
 }

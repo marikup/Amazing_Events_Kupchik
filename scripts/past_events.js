@@ -2,7 +2,7 @@
 const containerCard = document.getElementById('card1')
 const containerCheck = document.getElementById('Check1')
 const input = document.querySelector('input')
-const events = data.events
+const eventos = filtrarPorFecha(data.currentDate,data.events,"")
 
 
 
@@ -12,7 +12,8 @@ containerCheck.addEventListener('change',superFiltro)
 
 
 function superFiltro(){
-    let primerFiltro = filtrarPorTexto(data.events,input.value)
+  //let eventos = filtrarPorFecha(data.currentDate,data.events,"")
+    let primerFiltro = filtrarPorTexto(eventos,input.value)
     let segundoFiltro = filtrarPorCategory(primerFiltro)
     pintarEventos(segundoFiltro)
 }
@@ -21,8 +22,8 @@ function superFiltro(){
 
 
 
-pintarEventos(events)
-crearCheckBoxes(events)
+pintarEventos(eventos)
+crearCheckBoxes(eventos)
 
 function crearCheckBoxes(array){
 
@@ -65,7 +66,7 @@ function pintarEventos(array){
              </div>
              <div class="contenedor-btn">
              <p class="card-text-price"><i class="bi bi-tag-fill"></i> Price:${events.price}</p>
-          <a href="./details.html" class="btn-card btn btn-danger border border-light">Detail </a>
+          <a href="./details.html?id=${events._id}" class="btn-card btn btn-danger border border-light">Detail </a>
           </div>
  </div> `
   })

@@ -34,14 +34,15 @@ function crearCheckBoxes(array){
 
   let checkboxes = ''
   arrayChecks.forEach(category => {
-    checkboxes += `<div class="form-check">
+    checkboxes += `<div class="form-check ">
     <input class="form-check-input" type="checkbox" value="${category}" id="${category}" >
     <label class="form-check-label" for="${category}">
-      ${category}
-    </label>
+    ${category}</label>
   </div>`
   })
   containerCheck.innerHTML = checkboxes
+
+  //console.log([document])
   }
 
  
@@ -51,11 +52,11 @@ function pintarEventos(array){
     containerCard.innerHTML =`<h2> Lo siento, pero no encontramos ninguna coincidencia</h2>`
     return
   }
-  let card = ''
+  let card = '';
   array.forEach(events =>  {
     card += ` <div class= "card text-white bg-dark " style="width: 18rem;margin:.5rem;" >
     <div class ="card-img">
-       <img src="${events.image}" class="card-img-top" alt="...">
+       <img src="${events.image}" class="card-img-top" alt="">
          </div>
          <div class="card-body">
              <h5 class="card-title">${events.name}</h5>
@@ -65,7 +66,7 @@ function pintarEventos(array){
              </div>
              <div class="contenedor-btn">
              <p class="card-text-price"><i class="bi bi-tag-fill"></i> Price:${events.price}</p>
-          <a href="./details.html" class="btn-card btn btn-danger border border-light">Detail </a>
+             <a href="./details.html?id=${events._id}" class="btn-card btn btn-danger border border-light">Details </a>
           </div>
  </div> `
   })
@@ -96,3 +97,4 @@ let arrayChecksCheckedValues = arrayChecksChecked.map(
 }
 
 
+//console.log([document])

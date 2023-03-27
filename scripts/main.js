@@ -1,4 +1,14 @@
 
+
+function datosApi(){
+  const obtenerDatos = fetch('https://mindhub-xj03.onrender.com/api/amazing')
+  .then(response => response.json())
+  .then(data =>{
+
+  
+
+
+
 const containerCard = document.getElementById('card1')
 const containerCheck = document.getElementById('Check1')
 const input = document.querySelector('input')
@@ -95,6 +105,8 @@ let arrayChecksCheckedValues = arrayChecksChecked.map(
   }
   return array
 }
+})
+.catch(error => console.log(error));
+}
 
-
-//console.log([document])
+datosApi()
